@@ -10,5 +10,18 @@
             "name": "guid",
             "desc": "介绍"
         }
+    ],
+    "组件": [
+      {
+          "desc": "Basic",
+          "path": "/component",
+          "items": [
+              {
+                  "desc": "Button 按钮",
+                  "name": "button",
+                  "path": "/button"
+              }
+          ]
+      }
     ]
 }
