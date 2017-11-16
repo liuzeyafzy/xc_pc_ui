@@ -1,0 +1,14 @@
+{
+    "开发指南": [
+        {
+            "path": "/",
+            "name": "index",
+            "type": "pages"
+        },
+        {
+            "path": "/guid",
+            "name": "guid",
+            "desc": "介绍"
+        }
+    ]
+}
