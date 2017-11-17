@@ -2,7 +2,10 @@
     <button
         class="xc-button"
         :class="[
-            type ? 'xc-button--' + type : ' '
+            type ? 'xc-button--' + type : ' ',
+            {
+                'is-disabled': disabled,
+            }
         ]"
     >
         <span><slot></slot></span>
@@ -17,7 +20,8 @@
             type: {
                 type: String,
                 default: 'default'
-            }
+            },
+            disabled: Boolean,
         }
     }
 </script>

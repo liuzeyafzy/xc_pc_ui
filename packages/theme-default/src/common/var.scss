@@ -1,10 +1,36 @@
-$namespace : 'xc';
 
 /* Colors
 -------------------------- */
 $--color-white: #fff !default;
+$--color-black: #000 !default;
 
+$--color-primary: #3597DB !default;
+$--color-primary-light-1: mix($--color-white, $--color-primary, 10%) !default; /* 53a8ff */
+$--color-primary-light-2: mix($--color-white, $--color-primary, 20%) !default; /* 66b1ff */
+$--color-primary-light-3: mix($--color-white, $--color-primary, 30%) !default; /* 79bbff */
+$--color-primary-light-4: mix($--color-white, $--color-primary, 40%) !default; /* 8cc5ff */
+$--color-primary-light-5: mix($--color-white, $--color-primary, 50%) !default; /* a0cfff */
+$--color-primary-light-6: mix($--color-white, $--color-primary, 60%) !default; /* b3d8ff */
+$--color-primary-light-7: mix($--color-white, $--color-primary, 70%) !default; /* c6e2ff */
+$--color-primary-light-8: mix($--color-white, $--color-primary, 80%) !default; /* d9ecff */
+$--color-primary-light-9: mix($--color-white, $--color-primary, 90%) !default; /* ecf5ff */
+
+$--color-success: #1EBAE1 !default;
+$--color-warning: #F39B13!default;
+$--color-danger: #E64C3D !default;
+
+$--color-success-light: mix($--color-white, $--color-success, 80%) !default;
+$--color-warning-light: mix($--color-white, $--color-warning, 80%) !default;
+$--color-danger-light: mix($--color-white, $--color-danger, 80%) !default;
+
+$--color-success-lighter: mix($--color-white, $--color-success, 90%) !default;
+$--color-warning-lighter: mix($--color-white, $--color-warning, 90%) !default;
+$--color-danger-lighter: mix($--color-white, $--color-danger, 90%) !default;
+
+$--color-text-primary: #2d2f33 !default;
 $--color-text-regular: #5a5e66 !default;
+$--color-text-secondary: #878d99 !default;
+$--color-text-placeholder: #b4bccc !default;
 
 /* Border
 -------------------------- */
@@ -32,9 +58,32 @@ $--font-line-height-primary: 24px !default;
 $--button-font-size: 14px !default;
 $--button-font-weight: $--font-weight-primary !default;
 $--button-border-radius: $--border-radius-base !default;
-$--button-padding-vertical: 12px !default;
-$--button-padding-horizontal: 20px !default;
+$--button-padding-vertical: 10px !default;
+$--button-padding-horizontal: 25px !default;
 
+$--button-default-border: $--border-color-base !default;
 $--button-default-color: $--color-text-regular !default;
 $--button-default-fill: $--color-white !default;
-$--button-default-border: $--border-color-base !default;
+
+$--button-disabled-border: $--border-color-lighter !default;
+$--button-disabled-color: $--color-text-placeholder !default;
+$--button-disabled-fill: $--color-white !default;
+
+$--button-primary-border: $--color-primary !default;
+$--button-primary-color: $--color-white !default;
+$--button-primary-fill: $--color-primary !default;
+
+$--button-success-border: $--color-success !default;
+$--button-success-color: $--color-white !default;
+$--button-success-fill: $--color-success !default;
+
+$--button-warning-border: $--color-warning !default;
+$--button-warning-color: $--color-white !default;
+$--button-warning-fill: $--color-warning !default;
+
+$--button-danger-border: $--color-danger !default;
+$--button-danger-color: $--color-white !default;
+$--button-danger-fill: $--color-danger !default;
+
+$--button-hover-tint-percent: 20% !default;
+$--button-active-shade-percent: 10% !default;
