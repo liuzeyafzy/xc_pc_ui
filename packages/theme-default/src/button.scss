@@ -72,5 +72,11 @@
     @include m (danger) { 
         @include button-variant($--button-danger-color, $--button-danger-fill, $--button-danger-border);
     }
+    @include m(small) {
+        @include button-size($--button-small-padding-vertical, $--button-small-padding-horizontal, $--button-small-font-size, $--button-small-border-radius);
+    }
+    @include m(mini) {
+         @include button-size($--button-mini-padding-vertical, $--button-mini-padding-horizontal, $--button-mini-font-size, $--button-mini-border-radius);
+    }
 }  
   

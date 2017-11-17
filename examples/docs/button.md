@@ -58,3 +58,33 @@
 
 ```
 :::
+
+### 不同尺寸
+
+Button 组件提供除默认值以外的两种尺寸，可以在不同场景下选择合适的尺寸。
+额外的尺寸：```small```，通过设置```size```属性来配置它们。
+
+<div class="demo-block">
+    <xc-button>默认按钮</xc-button>
+    <xc-button size="small">小型按钮</xc-button>
+    <xc-button size="mini">超小按钮</xc-button>
+</div>
+
+::: demo
+```html
+
+<div class="demo-block">
+    <xc-button>默认按钮</xc-button>
+    <xc-button size="small">小型按钮</xc-button>
+    <xc-button size="mini">超小按钮</xc-button>
+</div>
+
+```
+:::
+
+### Attributes
+| 参数      | 说明    | 类型      | 可选值       | 默认值   |
+|---------- |-------- |---------- |-------------  |-------- |
+| size     | 尺寸   | string  |   default,small,mini   |    —     |
+| type     | 类型   | string    |   primary,success,warning,danger |     —    |
+| disabled  | 是否禁用状态    | boolean   | —   | false   |

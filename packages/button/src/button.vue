@@ -3,6 +3,7 @@
         class="xc-button"
         :class="[
             type ? 'xc-button--' + type : ' ',
+            buttonSize ? 'xc-button--' + buttonSize : '',
             {
                 'is-disabled': disabled,
             }
@@ -21,7 +22,14 @@
                 type: String,
                 default: 'default'
             },
+            size: String,
             disabled: Boolean,
+        },
+
+        computed: {
+            buttonSize() {
+                return this.size
+            }
         }
     }
 </script>
