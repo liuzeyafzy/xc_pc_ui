@@ -1,3 +1,13 @@
+<script>
+    export default {
+        methods: {
+            hello() {
+                alert('Hello World!');
+            }
+    }
+}
+</script>
+
 # Button 按钮
 ----
 ### 基础用法
@@ -5,7 +15,7 @@
 
 <div class="demo-block">
     <div>
-        <xc-button>默认按钮</xc-button>
+        <xc-button @click="hello">默认按钮</xc-button>
         <xc-button type="primary">主要按钮</xc-button>
         <xc-button type="success">成功按钮</xc-button>
         <xc-button type="warning">警告按钮</xc-button>
@@ -18,7 +28,7 @@
 
 <div class="demo-block">
     <div>
-        <xc-button>默认按钮</xc-button>
+        <xc-button @click="hello">默认按钮</xc-button>
         <xc-button type="primary">主要按钮</xc-button>
         <xc-button type="success">成功按钮</xc-button>
         <xc-button type="warning">警告按钮</xc-button>
@@ -35,7 +45,7 @@
 
 <div class="demo-block">
     <div>
-        <xc-button disabled>默认按钮</xc-button>
+        <xc-button disabled @click="hello">默认按钮</xc-button>
         <xc-button type="primary" disabled>主要按钮</xc-button>
         <xc-button type="success" disabled>成功按钮</xc-button>
         <xc-button type="warning" disabled>警告按钮</xc-button>
@@ -48,7 +58,7 @@
 
 <div class="demo-block">
     <div>
-        <xc-button disabled>默认按钮</xc-button>
+        <xc-button disabled @click="hello">默认按钮</xc-button>
         <xc-button type="primary" disabled>主要按钮</xc-button>
         <xc-button type="success" disabled>成功按钮</xc-button>
         <xc-button type="warning" disabled>警告按钮</xc-button>

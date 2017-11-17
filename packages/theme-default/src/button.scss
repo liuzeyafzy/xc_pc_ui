@@ -28,10 +28,10 @@
     @include button-size($--button-padding-vertical, $--button-padding-horizontal, $--button-font-size, $--button-border-radius);
  
     &:hover,
-    &:focus {
-        color: $--color-primary;
+    &:focus { 
+        color: $--color-primary; 
         border-color: $--color-primary-light-7;
-        background-color: $--color-primary-light-9; 
+        background-color: $--color-primary-light-9;  
     }
 
     &:active {
@@ -78,5 +78,12 @@
     @include m(mini) {
          @include button-size($--button-mini-padding-vertical, $--button-mini-padding-horizontal, $--button-mini-font-size, $--button-mini-border-radius);
     }
+
+    @include e(demo) {
+        color: red;
+    }
 }  
   
+@include e(demo) {
+    color: green;
+}

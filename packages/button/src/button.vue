@@ -1,6 +1,9 @@
 <template>
     <button
         class="xc-button"
+        @click="handleClick"
+        :disabled="disabled"
+        :type="nativeType"
         :class="[
             type ? 'xc-button--' + type : ' ',
             buttonSize ? 'xc-button--' + buttonSize : '',
@@ -9,7 +12,7 @@
             }
         ]"
     >
-        <span><slot></slot></span>
+        <span v-if="$slots.default" @click="handleInnerClick"><slot></slot></span>
     </button>
 </template>
 
@@ -22,6 +25,10 @@
                 type: String,
                 default: 'default'
             },
+            nativeType: {
+                type: String,
+                default: 'button'
+            },
             size: String,
             disabled: Boolean,
         },
@@ -29,6 +36,17 @@
         computed: {
             buttonSize() {
                 return this.size
+            }
+        },
+
+        methods: {
+            handleClick(evt) {
+                this.$emit('click', evt);
+            },
+            handleInnerClick(evt) {
+                if (this.disabled) {
+                    evt.stopPropagation();
+                }
             }
         }
     }
