@@ -43,7 +43,7 @@ npm install xcui -save
 
 ```js
 import XcUI from 'xcui' // 引入组件库
-import '../node_modules/VVUI/packages/theme-default/lib/index.css' // 引入样式库
+import '../node_modules/xcui/packages/theme-default/lib/index.css' // 引入样式库
 
 Vue.use(XcUI)
 ```
