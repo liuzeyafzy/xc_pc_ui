@@ -22,21 +22,32 @@
         }
     ],
     "组件": [
-      {
-          "desc": "Basic",
-          "path": "/component",
-          "items": [
-            {
-                "desc": "Layout 布局",
-                "name": "layout",
-                "path": "/layout"
-              },
-              {
-                  "desc": "Button 按钮",
-                  "name": "button",
-                  "path": "/button"
-              }
-          ]
-      }
+        {
+            "desc": "Basic",
+            "path": "/component",
+            "items": [
+                 {
+                    "desc": "Layout 布局",
+                    "name": "layout",
+                    "path": "/layout"
+                },
+                {
+                    "desc": "Button 按钮",
+                    "name": "button",
+                    "path": "/button"
+                }
+            ]
+        },
+        {
+            "desc": "Form",
+            "path": "/component",
+            "items": [
+                {
+                    "desc": "Checkbox 多选框",
+                    "name": "checkbox",
+                    "path": "/checkbox"
+                }
+            ]
+        }
     ]
 }

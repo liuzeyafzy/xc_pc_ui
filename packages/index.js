@@ -1,9 +1,11 @@
 import XcButton from './button';
 import XcRow from './row';
 import XcCol from './col';
+import XcCheckbox from './checkbox'
+import XcCheckboxGroup from './checkbox-group'
 
 const components = [
-    XcButton, XcRow, XcCol
+    XcButton, XcRow, XcCol, XcCheckbox, XcCheckboxGroup
 ]
 
 const install = function (Vue) {
@@ -19,5 +21,7 @@ export default {
     install,
     XcButton,
     XcRow,
-    XcCol
+    XcCol,
+    XcCheckbox,
+    XcCheckboxGroup
   };

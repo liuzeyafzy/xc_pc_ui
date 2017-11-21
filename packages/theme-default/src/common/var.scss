@@ -32,6 +32,10 @@ $--color-text-regular: #5a5e66 !default;
 $--color-text-secondary: #878d99 !default;
 $--color-text-placeholder: #b4bccc !default;
 
+/* Background
+-------------------------- */
+$--background-color-base: #f5f7fa !default;
+
 /* Border
 -------------------------- */
 $--border-width-base: 1px !default;
@@ -41,7 +45,12 @@ $--border-color-light: #dfe4ed !default;
 $--border-color-lighter: #e6ebf5 !default;
 $--border-color-extra-light: #edf2fc !default;
 $--border-base: $--border-width-base $--border-style-base $--border-color-base !default;
+$--border-radius-small: 2px !default;
 $--border-radius-base: 4px !default;
+
+/* Fill
+-------------------------- */
+$--fill-base: $--color-white !default;
 
 /* Font
 -------------------------- */
@@ -52,6 +61,22 @@ $--font-size-large: 18px !default;
 $--font-color-disabled-base: #bbb !default;
 $--font-weight-primary: 500 !default;
 $--font-line-height-primary: 24px !default;
+
+/* Size
+-------------------------- */
+$--size-base: 14px !default;
+
+/* z-index
+-------------------------- */
+$--index-normal: 1 !default;
+$--index-top: 1000 !default;
+$--index-popper: 2000 !default;
+
+/* Disable base
+-------------------------- */
+$--disabled-fill-base: $--background-color-base !default;
+$--disabled-color-base: $--color-text-placeholder !default;
+$--disabled-border-base: $--border-color-light !default;
 
 /* Button
 -------------------------- */
@@ -97,3 +122,26 @@ $--button-danger-fill: $--color-danger !default;
 
 $--button-hover-tint-percent: 20% !default;
 $--button-active-shade-percent: 10% !default;
+
+/* Checkbox
+-------------------------- */
+$--checkbox-input-height: 14px !default;
+$--checkbox-input-width: 14px !default;
+$--checkbox-font-size: 14px !default;
+$--checkbox-font-weight: $--font-weight-primary !default;
+$--checkbox-color: $--color-text-regular !default;
+$--checkbox-input-border-radius: $--border-radius-small !default;
+$--checkbox-input-fill: $--color-white !default;
+$--checkbox-input-border: $--border-base !default;
+$--checkbox-input-border-color: $--border-color-base !default;
+
+$--checkbox-disabled-input-border-color: $--border-color-base !default;
+$--checkbox-disabled-input-fill: #edf2fc !default;
+
+$--checkbox-disabled-checked-input-fill: $--border-color-extra-light !default;
+$--checkbox-disabled-checked-input-border-color: $--border-color-base !default;
+$--checkbox-disabled-checked-icon-color: $--color-text-placeholder !default;
+
+$--checkbox-checked-input-border-color: $--color-primary !default;
+$--checkbox-checked-input-fill: $--color-primary !default;
+$--checkbox-checked-icon-color: $--fill-base !default;
