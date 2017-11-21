@@ -1,7 +1,9 @@
 import XcButton from './button';
+import XcRow from './row';
+import XcCol from './col';
 
 const components = [
-    XcButton
+    XcButton, XcRow, XcCol
 ]
 
 const install = function (Vue) {
@@ -15,5 +17,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 export default {
     install,
-    XcButton
+    XcButton,
+    XcRow,
+    XcCol
   };

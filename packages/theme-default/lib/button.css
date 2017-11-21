@@ -173,8 +173,17 @@
     padding: 2px 9px;
     font-size: 12px;
     border-radius: 3px; }
-  .xc-button__demo {
-    color: red; }
-
-.xc-button__demo {
-  color: green; }
+  .xc-button--text {
+    border: none;
+    color: #3597DB;
+    background: transparent;
+    padding-left: 0;
+    padding-right: 0; }
+    .xc-button--text:hover, .xc-button--text:focus {
+      color: #5dace2;
+      border-color: transparent;
+      background-color: transparent; }
+    .xc-button--text:active {
+      color: #3088c5;
+      border-color: transparent;
+      background-color: transparent; }
