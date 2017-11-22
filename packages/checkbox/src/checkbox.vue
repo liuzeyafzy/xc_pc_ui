@@ -43,7 +43,7 @@
         mixins: [Emitter],
 
         props: {
-            value: '',
+            value: {},
             disabled: Boolean,
             label: {},
             checked: Boolean,

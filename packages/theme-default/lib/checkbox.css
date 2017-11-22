@@ -27,6 +27,8 @@
 -------------------------- */
 /* Checkbox
 -------------------------- */
+/* Radio
+-------------------------- */
 /* BEM support Func
  -------------------------- */
 /* Colors
@@ -57,6 +59,8 @@
 /* Button
 -------------------------- */
 /* Checkbox
+-------------------------- */
+/* Radio
 -------------------------- */
 /* BEM
  -------------------------- */
@@ -134,6 +138,8 @@
     z-index: 1;
     -webkit-transition: border-color 0.25s cubic-bezier(0.71, -0.46, 0.29, 1.46), background-color 0.25s cubic-bezier(0.71, -0.46, 0.29, 1.46);
     transition: border-color 0.25s cubic-bezier(0.71, -0.46, 0.29, 1.46), background-color 0.25s cubic-bezier(0.71, -0.46, 0.29, 1.46); }
+    .xc-checkbox__inner:hover {
+      border-color: #3597DB; }
     .xc-checkbox__inner:after {
       -webkit-box-sizing: content-box;
       box-sizing: content-box;

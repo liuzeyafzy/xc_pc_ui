@@ -12,9 +12,7 @@
 
         props: {
             value: {},
-            disabled: Boolean,
-            min: Number,
-            max: Number,
+            disabled: Boolean
         }
     }
 </script>

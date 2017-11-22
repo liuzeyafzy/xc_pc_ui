@@ -63,6 +63,8 @@
 ### 禁用状态
 多选框不可用状态。
 
+设置```disabled```属性即可。
+
 <div class="demo-block">
     <xc-checkbox v-model="checked1" disabled>备选项</xc-checkbox>
     <xc-checkbox v-model="checked2" disabled>备选项</xc-checkbox>
@@ -90,6 +92,8 @@
 
 ### 多选框组
 适用于多个勾选框绑定到同一个数组的情景，通过是否勾选来表示这一组选项中选中的项。
+
+```checkbox-group```元素能把多个 ```checkbox``` 管理为一组，只需要在 ```Group``` 中使用```v-model```绑定```Array```类型的变量即可。 ```xc-checkbox``` 的 ```label```属性是该 ```checkbox``` 对应的值，若该标签中无内容，则该属性也充当``` checkbox``` 按钮后的介绍。```label```与数组中的元素值相对应，如果存在指定的值则为选中状态，否则为不选中。
 
 <div class="demo-block">
     <xc-checkbox-group v-model="checkList">
@@ -179,7 +183,7 @@
 |---------- |-------- |---------- |-------------  |-------- |
 | label     | 选中状态的值（只有在checkbox-group或者绑定对象类型为array时有效）   | string / number / boolean  |   —   |   —    |
 | disabled     | 是否禁用   | boolean    |   —  |     —    |
-| name  | 是否禁用状态    | 原生 name 属性   | —   |  —   |
+| name  | 原生 name 属性   | string   | —   |  —   |
 | checked  | 当前是否勾选   | boolean   | —   |  false   |
 | indeterminate  | 设置 indeterminate 状态，只负责样式控制  | boolean   | — | false  |
 
@@ -191,7 +195,9 @@
 ### Checkbox-group Attributes
 | 参数      | 说明    | 类型      | 可选值       | 默认值   |
 |---------- |-------- |---------- |-------------  |-------- |
+| disabled     | 是否禁用   | boolean    |   —  |     —    |
 
 ### Checkbox-group Event
 | 事件名称  | 说明   | 回调参数 | 
 |---------- |-------- |---------- |
+| change  | 当绑定值变化时触发的事件   | 更新后的值    |

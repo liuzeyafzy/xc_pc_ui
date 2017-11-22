@@ -47,6 +47,7 @@ $--border-color-extra-light: #edf2fc !default;
 $--border-base: $--border-width-base $--border-style-base $--border-color-base !default;
 $--border-radius-small: 2px !default;
 $--border-radius-base: 4px !default;
+$--border-radius-circle: 100% !default;
 
 /* Fill
 -------------------------- */
@@ -145,3 +146,34 @@ $--checkbox-disabled-checked-icon-color: $--color-text-placeholder !default;
 $--checkbox-checked-input-border-color: $--color-primary !default;
 $--checkbox-checked-input-fill: $--color-primary !default;
 $--checkbox-checked-icon-color: $--fill-base !default;
+
+$--checkbox-input-border-color-hover: $--color-primary !default;
+
+/* Radio
+-------------------------- */
+$--radio-font-size: 14px !default;
+$--radio-font-weight: $--font-weight-primary !default;
+$--radio-color: $--color-text-regular !default;
+$--radio-input-height: 14px !default;
+$--radio-input-width: 14px !default;
+$--radio-input-border-radius: $--border-radius-circle !default;
+$--radio-input-fill: $--color-white !default;
+$--radio-input-border: $--border-base !default;
+$--radio-input-border-color: $--border-color-base !default;
+
+$--radio-disabled-input-border-color: $--disabled-border-base !default;
+$--radio-disabled-input-fill: $--disabled-fill-base !default;
+$--radio-disabled-icon-color: $--disabled-fill-base !default;
+
+$--radio-disabled-checked-input-border-color: $--disabled-border-base !default;
+$--radio-disabled-checked-input-fill: $--disabled-fill-base !default;
+$--radio-disabled-checked-icon-color: $--color-text-placeholder !default;
+
+$--radio-checked-text-color: $--color-primary !default;
+$--radio-checked-input-border-color: $--color-primary !default;
+$--radio-checked-input-fill: $--color-white !default;
+$--radio-checked-icon-color: $--color-primary !default;
+
+$--radio-checked-text-color: $--color-primary !default;
+
+$--radio-input-border-color-hover: $--color-primary !default;
