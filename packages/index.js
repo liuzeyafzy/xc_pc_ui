@@ -5,9 +5,11 @@ import XcCheckbox from './checkbox'
 import XcCheckboxGroup from './checkbox-group'
 import XcRadio from './radio'
 import XcRadioGroup from './radio-group'
+import XcTabs from './tabs'
+import XcTabPane from './tab-pane'
 
 const components = [
-    XcButton, XcRow, XcCol, XcCheckbox, XcCheckboxGroup, XcRadio, XcRadioGroup
+    XcButton, XcRow, XcCol, XcCheckbox, XcCheckboxGroup, XcRadio, XcRadioGroup, XcTabs, XcTabPane
 ]
 
 const install = function (Vue) {
@@ -27,5 +29,7 @@ export default {
     XcCheckbox,
     XcCheckboxGroup,
     XcRadio,
-    XcRadioGroup
+    XcRadioGroup,
+    XcTabs,
+    XcTabPane
   };
